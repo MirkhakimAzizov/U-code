@@ -1,3 +1,39 @@
 .footer {
     width: 100%;
+    &__inner {
+        padding: 105px 250px;
+        background-color: $btnBg;
+        background-image: url(../images/footer_bg.jpg);
+    }
+    &__info {
+        &-title {
+            @include font(normal, 700, 50px, 68px);
+            margin-bottom: 50px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        @include flex(column, center, center);
+        &__btn {
+            &-sign {
+                @include font(normal, 600, 20px, 15px);
+                padding: 20px 35px;
+                color: #FFFFFF;
+                background-color: transparent;
+                border: none;
+                border: 1px solid #FFFFFF;
+                filter: drop-shadow(0px 7px 50px rgba(9, 188, 77, 0.3));
+                border-radius: 5px;
+            }
+            &-start {
+                @include font(normal, 600, 20px, 15px);
+                padding: 20px 35px;
+                color: #242323;
+                background-color: #FFFFFF;
+                border: none;
+                border: 1px solid #FFFFFF;
+                filter: drop-shadow(0px 7px 50px rgba(9, 188, 77, 0.3));
+                border-radius: 5px;
+            }
+        }
+    }
 }
