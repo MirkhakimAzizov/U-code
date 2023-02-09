@@ -575,6 +575,50 @@ img {
 .started {
   width: 100%;
 }
+.started__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.started__inner---list {
+  border: 2px solid black;
+  position: relative;
+  width: 495px;
+  list-style-type: none;
+  background-image: url(../../images/line45.svg);
+  background-color: rgba(9, 188, 77, 0.2);
+  border-radius: 20px;
+  background-color: #242323;
+}
+.started__inner---list--itam {
+  width: 255px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+.started__inner---list--itam-span {
+  width: 74px;
+  display: block;
+  background-color: #45B871;
+  padding: 24px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.started__inner---list--itam-link {
+  margin: 0 auto;
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 15px;
+  color: #242323;
+}
+.started__inner__info {
+  max-width: 611px;
+}
+.started__inner__info_info {
+  width: 416px;
+}
 
 .courses {
   width: 100%;
