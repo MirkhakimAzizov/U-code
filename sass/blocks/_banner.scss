@@ -1,4 +1,16 @@
 // Banner classes
 .banner {
     width: 100%;
+    padding: 75px 0;
+    &__inner {
+        @include flex(row, space-between, center);
+    }
+    &__title {
+        width: 335px;
+        @include font(normal, 700, 35.7px, 50px);
+    }
+    &__list {
+        @include flex(row, space-between, center);
+        @extend %list-unstyled;
+    }
 }
