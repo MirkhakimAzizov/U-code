@@ -381,7 +381,11 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
   font-family: "Open Sans";
+=======
+  font-family: "Open Sans" sans-serif;
+>>>>>>> hero
   font-size: 30px;
   font-weight: 600;
   line-height: 30px;
@@ -491,6 +495,81 @@ img {
 
 .hero {
   width: 100%;
+}
+
+.banner {
+  width: 100%;
+}
+
+.started {
+  width: 100%;
+}
+
+.courses {
+  width: 100%;
+}
+
+.about {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  background-color: #E4F5EB;
+  padding-bottom: 100px;
+}
+.hero__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__info {
+  width: 625px;
+}
+.hero__info-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 63.5px;
+  line-height: 83px;
+  color: #242323;
+}
+.hero__info-text {
+  margin: 32px 0 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #6C6C6A;
+}
+.hero__info-btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 21px 48px;
+  color: #FFFFFF;
+  background-color: #45B871;
+  box-shadow: 0px 7.93174px 79.3174px rgba(9, 188, 77, 0.2);
+  border-radius: 4.95734px;
+  border: none;
+}
+.hero__right {
+  border: 5px solid #BEEBF8;
+  padding: 25px;
+  width: 643px;
+  height: 643px;
+  border-radius: 50%;
+}
+.hero__right__box {
+  width: 586.95px;
+  height: 585.96px;
+  background-image: url(../images/ellips.png);
+  overflow: hidden;
+  border-radius: 50%;
+}
+.hero__right-img {
+  background-image: url(../images/Vector.png);
 }
 
 .banner {
