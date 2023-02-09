@@ -1,4 +1,128 @@
 // courses classes
 .courses {
     width: 100%;
+    background-color: $headerBg;
+    position: relative;
+    &__title {
+        @include font(normal, 700, 58px, 74px);
+        color: #242323;
+        padding: 80px 0 120px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 410px);
+        gap: 30px;
+        padding-bottom: 210px;
+    }
+    &__card {
+        position: relative;
+        max-width: 450px;
+        background: #FFFFFF;
+        border: 1px solid #F2EFEF;
+        box-shadow: 0px 20px 100px rgba(87, 88, 89, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+        &__info {
+            padding: 35px 30px;
+            &-title {
+                @include font(normal, 600, 30px, 40px);
+                color: #242323;
+            }
+            &--box {
+                position: relative;
+                margin: 36px 0 26px;
+                @include flex(row, space-between, center);
+                &-text1 {
+                    position: relative;
+                    left: 38px;
+                    @include font(normal, 600, 20px, 15px);
+                    color: #575859;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: -5px;
+                        left: -42px;
+                        width: 32px;
+                        height: 26px;
+                        display: inline-block;
+                        background-image: url(../images/play.svg);
+                    }
+                }
+                &-text2 {
+                    position: relative;
+                    @include font(normal, 600, 18px, 22px);
+                    color: #575859;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0px;
+                        left: -30px;
+                        width: 16px;
+                        height: 20px;
+                        display: inline-block;
+                        background-image: url(../images/Vector.svg);
+                    }
+                }
+            }
+            &-line {
+                display: block;
+                border: 1px solid rgba(38, 142, 170, 0.502);
+            }
+            &--bottom {
+                position: relative;
+                padding-top: 24px;
+                @include flex(row, space-between, center);
+                &-title {
+                    position: absolute;
+                    top: 37.5px;
+                    left: 90px;
+                    @include font(normal, 700, 14px, 21px);
+                    color: #242323;
+                }
+                &-circile {
+                    position: absolute;
+                    top: 25px;
+                    left: 55px;
+                    width: 17.63px;
+                    height: 17.63px;
+                    display: block;
+                    border-radius: 50%;
+                    background: #2BDE6F;
+                    border: 1.25926px solid #FFFFFF;
+                }
+                &-link {
+                    position: absolute;
+                    top: 57.5px;
+                    left: 90px;
+                    @include font(normal, 700, 14px, 21px);
+                    color: #2BDE6F;
+                }
+                &-text {
+                    @include font(normal, 700, 34px, 15px);
+                    color: #4C68FF;
+                }
+            }
+        }
+    }
+    &__card:nth-child(2) {
+        bottom: 50px;
+    }
+    &__card:nth-child(5) {
+        bottom: 50px;
+    }
+    &__btn {
+        position: relative;
+        bottom: 170px;
+        @include font(normal, 700, 20px, 15px);
+        padding: 33px 44px;
+        width: 270px;
+        margin: 0 auto;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background: #45B871;
+        color: #FFFFFF;
+        box-shadow: 0px 10px 80px rgba(9, 188, 77, 0.25);
+        border-radius: 5px;
+    }
 }
