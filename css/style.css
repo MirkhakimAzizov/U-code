@@ -574,29 +574,37 @@ img {
 
 .started {
   width: 100%;
+  margin-top: 101px;
+  margin-bottom: 125px;
 }
 .started__inner {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
-.started__inner---list {
-  border: 2px solid black;
+.started__inner_list {
+  position: relative;
+  padding: 15px;
   position: relative;
   width: 495px;
+  height: 477px;
   list-style-type: none;
   background-image: url(../../images/line45.svg);
+  background-size: cover;
   background-color: rgba(9, 188, 77, 0.2);
   border-radius: 20px;
-  background-color: #242323;
+  z-index: -2;
 }
-.started__inner---list--itam {
+.started__inner_list---itam {
   width: 255px;
   background-color: #fff;
-  border: 1px solid black;
+  border-radius: 10px;
 }
-.started__inner---list--itam-span {
+.started__inner_list---itam--info {
+  padding: 40px 15px;
+}
+.started__inner_list---itam--info-span {
   width: 74px;
   display: block;
   background-color: #45B871;
@@ -604,8 +612,8 @@ img {
   border-radius: 50%;
   margin: 0 auto;
 }
-.started__inner---list--itam-link {
-  margin: 0 auto;
+.started__inner_list---itam--info-link {
+  margin-top: 30px;
   display: block;
   text-decoration: none;
   font-weight: 600;
@@ -613,11 +621,58 @@ img {
   line-height: 15px;
   color: #242323;
 }
-.started__inner__info {
+.started__inner_list :nth-child(3) {
+  position: absolute;
+  top: 350px;
+  left: 66px;
+  width: 255px;
+}
+.started__inner_list :nth-child(4) {
+  position: absolute;
+  top: 350px;
+  left: 300px;
+  width: 255px;
+  background-color: #45B871;
+}
+.started__inner_info {
   max-width: 611px;
 }
-.started__inner__info_info {
+.started__inner_info--title {
   width: 416px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 74px;
+}
+.started__inner_info--text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #8C8E91;
+  margin-bottom: 63px;
+}
+.started__inner_info--link {
+  position: relative;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  text-decoration-line: underline;
+  color: #242323;
+  left: 60px;
+}
+.started__inner_info--link::before {
+  position: absolute;
+  left: -70px;
+  top: -10px;
+  content: "";
+  display: block;
+  background-image: url(../../images/pause.svg);
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+  background-color: #DDEEF2;
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
 }
 
 .courses {
