@@ -596,15 +596,13 @@ img {
   border-radius: 20px;
   z-index: -2;
 }
-.started__inner_list---itam {
+.started__inner_list--itam {
   width: 255px;
   background-color: #fff;
   border-radius: 10px;
+  padding: 50px 23px;
 }
-.started__inner_list---itam--info {
-  padding: 40px 15px;
-}
-.started__inner_list---itam--info-span {
+.started__inner_list--itam-span {
   width: 74px;
   display: block;
   background-color: #45B871;
@@ -612,7 +610,7 @@ img {
   border-radius: 50%;
   margin: 0 auto;
 }
-.started__inner_list---itam--info-link {
+.started__inner_list--itam-link {
   margin-top: 30px;
   display: block;
   text-decoration: none;
@@ -621,10 +619,14 @@ img {
   line-height: 15px;
   color: #242323;
 }
+.started__inner_list :nth-child(2) {
+  position: absolute;
+  width: 255px;
+}
 .started__inner_list :nth-child(3) {
   position: absolute;
   top: 350px;
-  left: 66px;
+  left: 26px;
   width: 255px;
 }
 .started__inner_list :nth-child(4) {
@@ -632,7 +634,6 @@ img {
   top: 350px;
   left: 300px;
   width: 255px;
-  background-color: #45B871;
 }
 .started__inner_info {
   max-width: 611px;
