@@ -22,6 +22,9 @@
         box-shadow: 0px 20px 100px rgba(87, 88, 89, 0.1);
         border-radius: 15px;
         overflow: hidden;
+        &:hover {
+            background: #ffffffa4;
+        }
         &__info {
             padding: 35px 30px;
             &-title {
@@ -96,6 +99,11 @@
                     left: 90px;
                     @include font(normal, 700, 14px, 21px);
                     color: #2BDE6F;
+                    transition: all 0.2s ease-in-out;
+                    &:hover {
+                        text-decoration: none;
+                        color: #06fc64;
+                    }
                 }
                 &-text {
                     @include font(normal, 700, 34px, 15px);
@@ -124,5 +132,9 @@
         color: #FFFFFF;
         box-shadow: 0px 10px 80px rgba(9, 188, 77, 0.25);
         border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            background-color: #2bdecc;
+        }
     }
 }
