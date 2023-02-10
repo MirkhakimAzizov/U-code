@@ -450,7 +450,7 @@ img {
   font-size: 20px;
   line-height: 15px;
   color: #575859;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .header__nav__list--item-link:hover {
   color: rgba(87, 88, 89, 0.6156862745);
@@ -490,6 +490,7 @@ img {
 }
 
 .hero {
+  position: relative;
   width: 100%;
   background-color: #E4F5EB;
   padding-bottom: 100px;
@@ -529,8 +530,13 @@ img {
   box-shadow: 0px 7.93174px 79.3174px rgba(9, 188, 77, 0.2);
   border-radius: 4.95734px;
   border: none;
+  transition: all 0.2s ease-in-out;
+}
+.hero__info-btn:hover {
+  background-color: rgba(0, 255, 255, 0.752);
 }
 .hero__right {
+  position: relative;
   border: 5px solid #BEEBF8;
   padding: 25px;
   width: 643px;
@@ -546,6 +552,95 @@ img {
 }
 .hero__right-img {
   background-image: url(../images/Vector.png);
+}
+.hero__right--info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 25px;
+  display: inline-block;
+  background-color: #FFFFFF;
+  box-shadow: 3.96587px 3.96587px 49.5734px rgba(76, 104, 255, 0.1);
+  border-radius: 2.9744px;
+  text-align: center;
+}
+.hero__right--info_one {
+  top: 0;
+}
+.hero__right--info_two {
+  bottom: 100px;
+  left: -10px;
+}
+.hero__right--info-tree {
+  bottom: 0;
+  right: -55px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  float: left;
+}
+.hero__right--info-title {
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #575859;
+  margin: 0 0 7px;
+}
+.hero__right--info-title_one::before {
+  position: absolute;
+  left: -55px;
+  content: "";
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+  background-image: url(../../images/h21.svg);
+}
+.hero__right--info-title_two {
+  max-width: 400px;
+}
+.hero__right--info-title_two::before {
+  position: absolute;
+  left: -65px;
+  content: "";
+  width: 53px;
+  height: 53px;
+  display: inline-block;
+  background-image: url(../../images/h2.svg);
+}
+.hero__right--info-title_tree::before {
+  position: absolute;
+  top: -55px;
+  left: -15px;
+  content: "";
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+  background-image: url(../../images/h23.svg);
+}
+.hero__right--info-text {
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #696969;
+}
+.hero__right--info-text::before {
+  position: absolute;
+  left: 13px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-image: url(../../images/clock.svg);
 }
 
 .banner {
@@ -603,6 +698,9 @@ img {
   box-shadow: 0px 20px 100px rgba(87, 88, 89, 0.1);
   border-radius: 15px;
   overflow: hidden;
+}
+.courses__card:hover {
+  background: rgba(255, 255, 255, 0.6431372549);
 }
 .courses__card__info {
   padding: 35px 30px;
@@ -701,6 +799,11 @@ img {
   font-size: 14px;
   line-height: 21px;
   color: #2BDE6F;
+  transition: all 0.2s ease-in-out;
+}
+.courses__card__info--bottom-link:hover {
+  text-decoration: none;
+  color: #06fc64;
 }
 .courses__card__info--bottom-text {
   font-style: normal;
@@ -732,6 +835,10 @@ img {
   color: #FFFFFF;
   box-shadow: 0px 10px 80px rgba(9, 188, 77, 0.25);
   border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.courses__btn:hover {
+  background-color: #2bdecc;
 }
 
 .about {
@@ -856,6 +963,10 @@ img {
   border: 1px solid #FFFFFF;
   filter: drop-shadow(0px 7px 50px rgba(9, 188, 77, 0.3));
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.footer__info__btn-sign:hover {
+  background-color: #00f4fc;
 }
 .footer__info__btn-start {
   font-style: normal;
@@ -869,4 +980,9 @@ img {
   border: 1px solid #FFFFFF;
   filter: drop-shadow(0px 7px 50px rgba(9, 188, 77, 0.3));
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.footer__info__btn-start:hover {
+  background-color: #00f4fc;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
